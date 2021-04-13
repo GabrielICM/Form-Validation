@@ -5,10 +5,11 @@ const formulario = document.querySelector('#enviar-mail');
 const email = document.querySelector('#email');
 const asunto = document.querySelector('#asunto');
 const mensaje = document.querySelector('#mensaje');
-const er = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+const er = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 
 eventsListeners();
+
 function eventsListeners() {
     document.addEventListener('DOMContentLoaded', iniciarApp);
 
